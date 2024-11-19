@@ -1,6 +1,17 @@
+<script setup lang="ts">
+const doSomething = () => {
+  alert('doSomething')
+}
+
+const attrName = 'href2'
+const attrValue ='/'
+</script>
+
+
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <a :[attrName]="attrValue" @click.prevent="doSomething">do something </a>
   </div>
 </template>
 
